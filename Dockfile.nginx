@@ -1,0 +1,4 @@
+FROM nginx
+COPY deployment/nginx/nginx.conf /etc/nginx/nginx.conf
+
+ADD ["static", "/app/static"]
